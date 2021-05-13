@@ -126,5 +126,25 @@ console.log(a(0, 10));
 // valor de i se va incrementando hasta cumplir la condicion por lo cual los valores que saldrían por consola 
 // serian: 0,1,2,3,4,5,6,7,8 y 9. Estos valor se volverían a repetir ya que se nos pide otro console.log desde
 // el 0 hasta el 10 (este valor no cumple la condicion), por lo cual nos vuelve a dar los valores desde el 0 al
-// 9. Finaliza nuestra ejecucion de la consola con un valor 0, ya que a cumple con dos valores fuera de la 
-// funcion que seria 0 y 10. Por lo tanto nuestro resultado final sería 0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9 y 0.
+// 9. Se ejecuta el return que seria 10*0, por lo cual es ultimo valor en nuestro listado es 0  
+// Por lo tanto nuestro resultado final sería 0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9 y 0.
+
+// Ejercicio 11
+
+function a() {
+    for (var i = 0; i < 10; i++) {
+        for (var j = 0; j < 10; j++) {
+            console.log(j);
+        }
+        console.log(i);
+    }
+}
+
+
+// En este caso tenemos dos variables i y j. Ambas parten en 0. Al estar en el primer for el valor de i debe ser 0
+// pero sin embargo, este valor se pierde ya que debo entra al for de j cuyo valor tambien es 0, pero la consola 
+// solicita que imprimamos el valor de de i al final que en este caso ya no existe por lo cual queda vacio el valor a 
+// imprimir en consola y aunque lo realicemos cumpliendo las condiciones de i<10 y j<10, nuestra consola anulara
+// los valores de i por lo cual el resultado en nuestra consola estara vacia finalmente.
+
+// Ejercicio 12
