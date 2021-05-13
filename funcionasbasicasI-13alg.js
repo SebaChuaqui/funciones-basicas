@@ -128,6 +128,28 @@ function ejercicio10(array){
 
 console.log(ejercicio10([-8,-5,4,-2,1]));
 
+// Ejercicio 11
+
+function ejercicio11(array){
+    var newArray=[];
+    var max=array[0];
+    var min=array[0];
+    var sum = 0;
+    for(var i=0;array.length;i++){
+        if(max < array[i]){
+            max = array[i];
+        }
+        else if(min < array[i]){
+            min = array[i];
+        }
+    }
+    var avg = sum / array.length;
+    newArray =[max,min,avg];
+    return newArray;
+}
+
+console.log(ejercicio11([1,5,10,-2]))
+
 // Ejercicio 12
 
 function ejercicio12(array){
