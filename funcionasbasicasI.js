@@ -148,3 +148,56 @@ function a() {
 // los valores de i por lo cual el resultado en nuestra consola estara vacia finalmente.
 
 // Ejercicio 12
+
+function a(){
+    for(var i=0; i<10; i++){
+        for(var j=0; j<10; j++){
+            console.log(i,j);
+        }
+        console.log(j,i);
+    }
+}
+
+// Nuestros valor de i y j parten en 0, sin embargo, no existe condicion para que sea ejetado por lo cual su resultado
+// es vacio.
+
+// Ejercicio 13
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+console.log(z);
+
+// El valor de z es 10 lo ingreso a la funcion y el valor de z no es igual a 15 por lo cual la consola imprime
+// el valor original que seria 10.
+
+// Ejercicio 14
+
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+}
+a();
+console.log(z);
+
+// Primero se invoca a() por lo cual el valor que sale por consola es 15 que corresponde al valor de z dentro 
+// de la funcion y luego se imprime el valor 10 que es la variable de z.
+
+
+// Ejercicio 15
+var z = 10;
+function a(){
+    var z = 15;
+    console.log(z);
+    return z;
+}
+z = a();
+console.log(z);
+
+// El valor de z es 15 por lo cual al realizar la ejecucion de z=a() el primer valor de la consola sería 15.
+// Luego ingreso a la funcion y comparo z es igual a 15, lo cual es verdad, por lo cual de vuelve a imprimir 
+// el numero 15. 
+
