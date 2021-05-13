@@ -128,6 +128,31 @@ function ejercicio10(array){
 
 console.log(ejercicio10([-8,-5,4,-2,1]));
 
+// Ejercicio 12
+
+function ejercicio12(array){
+    var temp = array[0];
+    array[0] =  array[array.length-1];
+    array[array.length-1] = temp;
+    return array;
+}
+
+console.log(ejercicio12([4,8,12,-6]));
+
+// Ejercicio 13
+
+function ejercicio13(array){
+    for(var i=0;i<array.length;i++){
+        if(array[i] < 0){
+            array[i]= 'Dojo'
+        }
+    }
+    return array;
+}
+
+console.log(ejercicio13([-5,-1,2,-7,0]));
+
+
 
 
 
